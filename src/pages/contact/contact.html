@@ -1,0 +1,56 @@
+<!--
+  Generated template for the suggestionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title>Suggestion</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <p>
+        Welcome to the <b>Otawa MCMLXXIX</b> suggestion page! We're eagear to hear your astonishing ideas.
+    </p>
+    <form #form="ngForm" (ngSubmit)="onsubmit(form)">
+        <ion-item>
+            <ion-label>
+                Email
+            </ion-label>
+            <ion-input
+                required
+                type="email"
+                name="suggestion.email"
+                aria-placeholder="oheneim@kill.all"
+                [(ngModel)]="suggestion.email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                Fullname
+            </ion-label>
+            <ion-input
+                required
+                type="text"
+                name="suggestion.fullname"
+                aria-placeholder="Van Oheneim"
+                [(ngModel)]="suggestion.fullname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                Suggestion
+            </ion-label>
+            <ion-textarea
+                required
+                name="suggestion.suggestion"
+                [(ngModel)]="suggestion.suggestion"></ion-textarea>
+        </ion-item>
+        <button ion-button type="submit" block>
+            <ion-icon name="send"></ion-icon>
+        </button>
+    </form>  
+</ion-content>
+
+<page-footer></page-footer>
