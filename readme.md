@@ -4,7 +4,7 @@ This app implement a contact-like page using local storage...
 
 ## Setup
 
-Have `node`, `npm`, `cordova`, `ionic` and `android-sdk` installed and setup.
+Have `node`, `npm`, `ionic`, `cordova`, `typescript` and `android-sdk` installed and setup.
 
 ## 1. Clone it
 
